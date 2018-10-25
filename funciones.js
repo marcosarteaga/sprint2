@@ -44,6 +44,7 @@ function finalJuego(){
 	girarcarta('id13');
 	if(UltimaCarta==CartaOculta){
 		document.getElementById('p1prova').innerHTML="HAS GANADO!";
+		preguntar();
 
 
 	}
@@ -104,4 +105,17 @@ function validarPregunta(){
     document.getElementById('OptSexo').value = 0;
   }
 
+}
+
+function pedirnombre() {
+	var person = prompt("Introduce tu nombre", "Nombre");
+    
+}
+
+function preguntar(){
+	var mensaje = confirm("¿Quieres guardar tu puntuación?");
+	if (mensaje) {
+		pedirnombre();
+
+	}
 }
